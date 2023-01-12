@@ -26071,6 +26071,13 @@ a.wp-block-button__link {
     justify-content: space-between;
 }
 
+.numbers-item {
+    /* padding-left: 120px; */
+    width: 50%;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top
+}
 
 @media screen and (max-width:767px) {
     .container {
@@ -39832,13 +39839,7 @@ body.dark-skin {
     font-size: 0
 }
 
-.numbers-item {
-    /* padding-left: 120px; */
-    width: 50%;
-    font-size: 16px;
-    display: inline-block;
-    vertical-align: top
-}
+
 
 .history-title {
     margin: 0;
