@@ -219,7 +219,7 @@
 													</div>
 													<div class="description">
 														<div style="text-align: justify;">
-<p>With 7+ years coding under my belt, I'm a passionate person who's been building web applications with Laravel, Vue.js, PHP, and WordPress since 2016. While code is my jam, I've also mastered server management and solving techy problems, keeping projects running smoothly.</p>
+<p>With <span id="years-of-experience"></span>+ years coding under my belt, I'm a passionate person who's been building web applications with Laravel, Vue.js, PHP, and WordPress since 2016. While code is my jam, I've also mastered server management and solving techy problems, keeping projects running smoothly.</p>
 <br>
 <p>I love working in collaborative environments that value smart work and continuous learning. My proudest achievements include building successful e-commerce platforms, integrating third-party APIs, and developing custom APIs for seamless data exchange between Laravel and Vue applications.</p>
 <br>
@@ -254,7 +254,7 @@
 													<div class="info-list">
 														<ul>
 															<li>
-																<span class="num">6 <strong>+</strong></span>
+																<span class="num"><span id="years-of-experience"></span> <strong>+</strong></span>
 																<span class="value">Years of
 																	<strong>Experience</strong></span>
 															</li>
@@ -835,7 +835,7 @@
 																		</span>
 																		<div class="date lui-subtitle">
 																			<span>
-																				Feb 2023 - <b>Present</b> </span>
+																				Apr 2023 - <b>Present</b> </span>
 																		</div>
 																	</h6>
 																	<div class="history-content">
@@ -876,7 +876,7 @@
 																		</span>
 																		<div class="date lui-subtitle">
 																			<span>
-																				Sept 2022 - Jan 2023 </span>
+																				Oct 2022 - Mar 2023 </span>
 																		</div>
 																	</h6>
 																	<div class="history-content">
@@ -915,7 +915,7 @@
 																			Full Stack PHP Developer</span>
 																		<div class="date lui-subtitle">
 																			<span>
-																				Sept 2019 - Aug 2022 </span>
+																				Sept 2019 - Sept 2022 </span>
 																		</div>
 																	</h6>
 																	<div class="history-content">
@@ -2258,10 +2258,17 @@
 
 	<script>
 		function readmore() {
-			//
-			
 			$('#readmore-hide').show()
 		}
+		
+		 // Get the current year
+        const currentYear = new Date().getFullYear();
+
+        // Calculate the years of experience
+        const yearsOfExperience = currentYear - 2016;
+
+        // Update the text content using the calculated experience
+        document.getElementById("years-of-experience").textContent = yearsOfExperience;
 	</script>
 </body>
 
