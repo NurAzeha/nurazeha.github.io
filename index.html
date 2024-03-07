@@ -219,7 +219,7 @@
 													</div>
 													<div class="description">
 														<div style="text-align: justify;">
-<p>With <span id="years-of-experience"></span>+ years coding under my belt, I'm a passionate person who's been building web applications with Laravel, Vue.js, PHP, and WordPress since 2016. While code is my jam, I've also mastered server management and solving techy problems, keeping projects running smoothly.</p>
+<p>With <span class="years-of-experience"></span>+ years coding under my belt, I'm a passionate person who's been building web applications with Laravel, Vue.js, PHP, and WordPress since 2016. While code is my jam, I've also mastered server management and solving techy problems, keeping projects running smoothly.</p>
 <br>
 <p>I love working in collaborative environments that value smart work and continuous learning. My proudest achievements include building successful e-commerce platforms, integrating third-party APIs, and developing custom APIs for seamless data exchange between Laravel and Vue applications.</p>
 <br>
@@ -254,7 +254,7 @@
 													<div class="info-list">
 														<ul>
 															<li>
-																<span class="num" id="years-of-experience"><strong>+</strong></span>
+																<span class="num years-of-experience"><strong>+</strong></span>
 																<span class="value">Years of
 																	<strong>Experience</strong></span>
 															</li>
@@ -2268,7 +2268,7 @@
         const yearsOfExperience = currentYear - 2016;
 
         // Update the text content using the calculated experience
-        document.getElementById("years-of-experience").textContent = yearsOfExperience;
+        document.getElementsByClassName("years-of-experience").textContent = yearsOfExperience;
 	</script>
 </body>
 
