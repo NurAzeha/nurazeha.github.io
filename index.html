@@ -2268,7 +2268,11 @@
         const yearsOfExperience = currentYear - 2016;
 
         // Update the text content using the calculated experience
-        document.getElementsByClassName("years-of-experience").textContent = yearsOfExperience;
+		const experienceSpans = Array.from(document.getElementsByClassName("years-of-experience"));
+
+experienceSpans.forEach(span => {
+  span.textContent = yearsOfExperience;
+});
 	</script>
 </body>
 
